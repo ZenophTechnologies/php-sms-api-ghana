@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class ZenophSMSGH_MessageResponse | PHP SMS API for Bulk SMS (Ghana) - SMSONLINEGH</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+		</div>
+
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-ZenophSMSGH.html">ZenophSMSGH</a></li>
+				<li class="active"><a href="class-ZenophSMSGH_MessageResponse.html">ZenophSMSGH_MessageResponse</a></li>
+				<li><a href="class-ZenophSMSGH_MESSAGETYPE.html">ZenophSMSGH_MESSAGETYPE</a></li>
+				<li><a href="class-ZenophSMSGH_RESPONSECODE.html">ZenophSMSGH_RESPONSECODE</a></li>
+			</ul>
+
+
+
+			<h3>Exceptions</h3>
+			<ul>
+				<li><a href="class-ZenophSMSGH_Exception.html">ZenophSMSGH_Exception</a></li>
+			</ul>
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class ZenophSMSGH_MessageResponse</h1>
+
+
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		
+		
+
+			<b>Located at</b> SMSResponse.php		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code>__construct( <span> <var>$istokenresp</var></span>, <span> <var>$responsevalue</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isTokenResponse" id="_isTokenResponse">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isTokenResponse">#</a>
+		<code>isTokenResponse( )</code>
+
+		<div class="description short">
+			<p>Tells whether the response value after submitting a message is a token response or not.</p>
+
+<p><br /></p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Tells whether the response value after submitting a message is a token response or not.</p>
+
+<p><br /></p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean<br>Returns <i>true</i> if the response value is a token response otherwise it returns <i>false</i>.
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getResponseValue" id="_getResponseValue">
+
+		<td class="attributes"><code>
+			 public 
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getResponseValue">#</a>
+		<code>getResponseValue( )</code>
+
+		<div class="description short">
+			<p>Gets the response value that is returned from the server after submitting a message.</p>
+
+<p><br /></p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Gets the response value that is returned from the server after submitting a message.</p>
+
+<p><br /></p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed<br><p>Returns the response value that is returned from the SMS server after submitting a message.</p>
+
+<p><br /></p>
+
+<p>
+The response value that is returned after submitting a message is variant depending on factors such as
+the total number of destinations submitted, whether the message was scheduled, and whether the message
+was personalised or not.
+</p>
+
+<p><br /></p>
+
+<p>
+Firstly, when a non-personalised message is submitted and the total number of destinations is less than or
+equal to 400, the SMS server will submit the message and return the submit status of destinations
+as well as unique identifiers assigned to the destinations. The response value will be an array of the destinations.
+Each destination is also an array of three elements which can be accessed with keys <i>number</i>,
+<i>statusCode</i>, and <i>destinationId</i>.
+</p>
+
+<p><br /></p>
+
+<p>
+Secondly, if the message is non-personalised and the total number of destinations is greater than
+400, the SMS server will immediately return a token and then proceed to submit the message
+to the destinations. In this case, the response value is not an array but a single string value which
+is the token assigned to the message. If there is the need, the returned token may be used to query the
+submit status of the destinations later.
+</p>
+
+<p><br /></p>
+
+<p>
+Thirdly, if the message was personalised or scheduled, the response value will be a token that identifies
+the message just as explained previously.
+</p>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		PHP SMS API for Bulk SMS (Ghana) - SMSONLINEGH API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

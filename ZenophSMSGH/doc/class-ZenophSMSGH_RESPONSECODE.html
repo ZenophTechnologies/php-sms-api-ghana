@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class ZenophSMSGH_RESPONSECODE | PHP SMS API for Bulk SMS (Ghana) - SMSONLINEGH</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+		</div>
+
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-ZenophSMSGH.html">ZenophSMSGH</a></li>
+				<li><a href="class-ZenophSMSGH_MessageResponse.html">ZenophSMSGH_MessageResponse</a></li>
+				<li><a href="class-ZenophSMSGH_MESSAGETYPE.html">ZenophSMSGH_MESSAGETYPE</a></li>
+				<li class="active"><a href="class-ZenophSMSGH_RESPONSECODE.html">ZenophSMSGH_RESPONSECODE</a></li>
+			</ul>
+
+
+
+			<h3>Exceptions</h3>
+			<ul>
+				<li><a href="class-ZenophSMSGH_Exception.html">ZenophSMSGH_Exception</a></li>
+			</ul>
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class ZenophSMSGH_RESPONSECODE</h1>
+
+
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		
+		
+
+			<b>Located at</b> ResponseCodes.php		<br>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary constants" id="constants">
+	<caption>Constants summary</caption>
+	<tr data-order="SUCCESS" id="SUCCESS">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name">
+			<code>
+<b>SUCCESS</b>			</code>
+
+			<div class="description short">
+				<p>Indicates that the request was successfully completed.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Indicates that the request was successfully completed.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#SUCCESS" class="anchor">#</a>
+				<code><span class="php-num">1400</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="ERR_AUTH" id="ERR_AUTH">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name">
+			<code>
+<b>ERR_AUTH</b>			</code>
+
+			<div class="description short">
+				<p>An error indicator for user authentication failure.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>An error indicator for user authentication failure.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#ERR_AUTH" class="anchor">#</a>
+				<code><span class="php-num">1401</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="ERR_MSGTYPE" id="ERR_MSGTYPE">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name">
+			<code>
+<b>ERR_MSGTYPE</b>			</code>
+
+			<div class="description short">
+				<p>An error indicator for missing or invalid message type.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>An error indicator for missing or invalid message type.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#ERR_MSGTYPE" class="anchor">#</a>
+				<code><span class="php-num">1402</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="ERR_MESSAGE" id="ERR_MESSAGE">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name">
+			<code>
+<b>ERR_MESSAGE</b>			</code>
+
+			<div class="description short">
+				<p>An error indicator for missing or invalid message value.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>An error indicator for missing or invalid message value.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#ERR_MESSAGE" class="anchor">#</a>
+				<code><span class="php-num">1403</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="ERR_DEST" id="ERR_DEST">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name">
+			<code>
+<b>ERR_DEST</b>			</code>
+
+			<div class="description short">
+				<p>An error indicator for missing destinations parameter.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>An error indicator for missing destinations parameter.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#ERR_DEST" class="anchor">#</a>
+				<code><span class="php-num">1404</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="ERR_SENDER" id="ERR_SENDER">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name">
+			<code>
+<b>ERR_SENDER</b>			</code>
+
+			<div class="description short">
+				<p>An error indicator for missing or invalid message sender identifier.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>An error indicator for missing or invalid message sender identifier.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#ERR_SENDER" class="anchor">#</a>
+				<code><span class="php-num">1405</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="ERR_DLVRPT" id="ERR_DLVRPT">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name">
+			<code>
+<b>ERR_DLVRPT</b>			</code>
+
+			<div class="description short">
+				<p>An error indicator for invalid delivery report specifier.</p>
+
+<p>This error code will not be returned since delivery report specifier is
+currently not used.
+</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>An error indicator for invalid delivery report specifier.</p>
+
+<p>This error code will not be returned since delivery report specifier is
+currently not used.
+</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#ERR_DLVRPT" class="anchor">#</a>
+				<code><span class="php-num">1406</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="ERR_WAPPUSH_URL" id="ERR_WAPPUSH_URL">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name">
+			<code>
+<b>ERR_WAPPUSH_URL</b>			</code>
+
+			<div class="description short">
+				<p>An error indicator for missing or invalid URL for wap push message.</p>
+
+<p>
+This error code will not be returned since wap push messages are currently not supported.
+</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>An error indicator for missing or invalid URL for wap push message.</p>
+
+<p>
+This error code will not be returned since wap push messages are currently not supported.
+</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#ERR_WAPPUSH_URL" class="anchor">#</a>
+				<code><span class="php-num">1407</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="ERR_VALUES" id="ERR_VALUES">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name">
+			<code>
+<b>ERR_VALUES</b>			</code>
+
+			<div class="description short">
+				<p>An error indicator for missing values parameter for personalised message.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>An error indicator for missing values parameter for personalised message.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#ERR_VALUES" class="anchor">#</a>
+				<code><span class="php-num">1408</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="ERR_MISSING_VAL" id="ERR_MISSING_VAL">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name">
+			<code>
+<b>ERR_MISSING_VAL</b>			</code>
+
+			<div class="description short">
+				<p>An error indicator for missing value for a destination in a personalised message.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>An error indicator for missing value for a destination in a personalised message.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#ERR_MISSING_VAL" class="anchor">#</a>
+				<code><span class="php-num">1409</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="ERR_PARAMETER" id="ERR_PARAMETER">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name">
+			<code>
+<b>ERR_PARAMETER</b>			</code>
+
+			<div class="description short">
+				<p>An error indicator for missing or invalid request parameter.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>An error indicator for missing or invalid request parameter.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#ERR_PARAMETER" class="anchor">#</a>
+				<code><span class="php-num">1500</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="ERR_VALIDATION" id="ERR_VALIDATION">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name">
+			<code>
+<b>ERR_VALIDATION</b>			</code>
+
+			<div class="description short">
+				<p>An error indicator for request validation.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>An error indicator for request validation.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#ERR_VALIDATION" class="anchor">#</a>
+				<code><span class="php-num">1501</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="ERR_INSUFF_CREDIT" id="ERR_INSUFF_CREDIT">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name">
+			<code>
+<b>ERR_INSUFF_CREDIT</b>			</code>
+
+			<div class="description short">
+				<p>An error indicator for insufficient credits balance for submitting message to destinations.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>An error indicator for insufficient credits balance for submitting message to destinations.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#ERR_INSUFF_CREDIT" class="anchor">#</a>
+				<code><span class="php-num">1502</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="ERR_INCOMPAT_API" id="ERR_INCOMPAT_API">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name">
+			<code>
+<b>ERR_INCOMPAT_API</b>			</code>
+
+			<div class="description short">
+				<p>An error indicator for incompatible API library.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>An error indicator for incompatible API library.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#ERR_INCOMPAT_API" class="anchor">#</a>
+				<code><span class="php-num">1503</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="ERR_ROUTING" id="ERR_ROUTING">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name">
+			<code>
+<b>ERR_ROUTING</b>			</code>
+
+			<div class="description short">
+				<p>An error indicator for invalid or unknown user route for destination.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>An error indicator for invalid or unknown user route for destination.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#ERR_ROUTING" class="anchor">#</a>
+				<code><span class="php-num">1504</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="ERR_TOKEN" id="ERR_TOKEN">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name">
+			<code>
+<b>ERR_TOKEN</b>			</code>
+
+			<div class="description short">
+				<p>An error indicator for missing or invalid token for getting submit status of destinations.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>An error indicator for missing or invalid token for getting submit status of destinations.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#ERR_TOKEN" class="anchor">#</a>
+				<code><span class="php-num">1505</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="ERR_FILTER" id="ERR_FILTER">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name">
+			<code>
+<b>ERR_FILTER</b>			</code>
+
+			<div class="description short">
+				<p>An error indicator for missing or invalid filter for getting submit status of destinations.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>An error indicator for missing or invalid filter for getting submit status of destinations.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#ERR_FILTER" class="anchor">#</a>
+				<code><span class="php-num">1506</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="ERR_REQUEST" id="ERR_REQUEST">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name">
+			<code>
+<b>ERR_REQUEST</b>			</code>
+
+			<div class="description short">
+				<p>An error indicator for errors when processing request.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>An error indicator for errors when processing request.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#ERR_REQUEST" class="anchor">#</a>
+				<code><span class="php-num">1507</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="ERR_NULL_RESPONSE" id="ERR_NULL_RESPONSE">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name">
+			<code>
+<b>ERR_NULL_RESPONSE</b>			</code>
+
+			<div class="description short">
+				<p>An error indicator for null response after message submission.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>An error indicator for null response after message submission.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#ERR_NULL_RESPONSE" class="anchor">#</a>
+				<code><span class="php-num">1508</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="ERR_UNKNOWN" id="ERR_UNKNOWN">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name">
+			<code>
+<b>ERR_UNKNOWN</b>			</code>
+
+			<div class="description short">
+				<p>An error indicator for unknown request error.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>An error indicator for unknown request error.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#ERR_UNKNOWN" class="anchor">#</a>
+				<code><span class="php-num">1509</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="ERR_LOGIN" id="ERR_LOGIN">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name">
+			<code>
+<b>ERR_LOGIN</b>			</code>
+
+			<div class="description short">
+				<p>An error indicator for missing or invalid account login.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>An error indicator for missing or invalid account login.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#ERR_LOGIN" class="anchor">#</a>
+				<code><span class="php-num">1600</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="ERR_SCHEDDATE" id="ERR_SCHEDDATE">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name">
+			<code>
+<b>ERR_SCHEDDATE</b>			</code>
+
+			<div class="description short">
+				<p>An error indicator for invalid date and time for scheduling message.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>An error indicator for invalid date and time for scheduling message.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#ERR_SCHEDDATE" class="anchor">#</a>
+				<code><span class="php-num">1601</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="ERR_SCHEDOFFSET" id="ERR_SCHEDOFFSET">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name">
+			<code>
+<b>ERR_SCHEDOFFSET</b>			</code>
+
+			<div class="description short">
+				<p>An error indicator for invalid time zone offset from GMT for scheduling message.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>An error indicator for invalid time zone offset from GMT for scheduling message.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#ERR_SCHEDOFFSET" class="anchor">#</a>
+				<code><span class="php-num">1602</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="ERR_REJECTED" id="ERR_REJECTED">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name">
+			<code>
+<b>ERR_REJECTED</b>			</code>
+
+			<div class="description short">
+				<p>An error indicator for rejected destination.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>An error indicator for rejected destination.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#ERR_REJECTED" class="anchor">#</a>
+				<code><span class="php-num">1603</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="PENDING" id="PENDING">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name">
+			<code>
+<b>PENDING</b>			</code>
+
+			<div class="description short">
+				<p>Indicates that message is pending submission to particular destination.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Indicates that message is pending submission to particular destination.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#PENDING" class="anchor">#</a>
+				<code><span class="php-num">1800</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="MAINTENANCE_MODE" id="MAINTENANCE_MODE">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name">
+			<code>
+<b>MAINTENANCE_MODE</b>			</code>
+
+			<div class="description short">
+				<p>Indicates that the website is under maintenance and that messages cannot be submitted.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Indicates that the website is under maintenance and that messages cannot be submitted.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#MAINTENANCE_MODE" class="anchor">#</a>
+				<code><span class="php-num">1801</span></code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		PHP SMS API for Bulk SMS (Ghana) - SMSONLINEGH API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

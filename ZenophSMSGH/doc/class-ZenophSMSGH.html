@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class ZenophSMSGH | PHP SMS API for Bulk SMS (Ghana) - SMSONLINEGH</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+		</div>
+
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-ZenophSMSGH.html">ZenophSMSGH</a></li>
+				<li><a href="class-ZenophSMSGH_MessageResponse.html">ZenophSMSGH_MessageResponse</a></li>
+				<li><a href="class-ZenophSMSGH_MESSAGETYPE.html">ZenophSMSGH_MESSAGETYPE</a></li>
+				<li><a href="class-ZenophSMSGH_RESPONSECODE.html">ZenophSMSGH_RESPONSECODE</a></li>
+			</ul>
+
+
+
+			<h3>Exceptions</h3>
+			<ul>
+				<li><a href="class-ZenophSMSGH_Exception.html">ZenophSMSGH_Exception</a></li>
+			</ul>
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class ZenophSMSGH</h1>
+
+
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		
+		
+
+			<b>Located at</b> ZenophSMSGH.php		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code>__construct( )</code>
+
+		<div class="description short">
+			<p>Constructor to set properties to default values.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Constructor to set properties to default values.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setUser" id="_setUser">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setUser">#</a>
+		<code>setUser( <span>string <var>$user</var></span> )</code>
+
+		<div class="description short">
+			<p>Sets the user account login for authentication</p>
+
+<p><br /></p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Sets the user account login for authentication</p>
+
+<p><br /></p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$user</var></dt>
+					<dd>The account login for authentication</dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					Exception<br><p>Thrown if <i>$user</i> is <i>null</i> or empty.</p>
+
+<p></p>
+
+<p><br /></p>
+				</div>
+
+				<h4>Example</h4>
+				<div class="list">
+						<p>The following sets the accout login:</p>
+
+<pre><span class="php-var">$zs</span> = <span class="php-keyword1">new</span> ZenophSMSGH();
+<span class="php-var">$zs</span>-&gt;setUser(<span class="php-quote">'account_login'</span>);</pre><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setPassword" id="_setPassword">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setPassword">#</a>
+		<code>setPassword( <span>string <var>$password</var></span> )</code>
+
+		<div class="description short">
+			<p>Sets the user account password for authentication.</p>
+
+<p><br /></p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Sets the user account password for authentication.</p>
+
+<p><br /></p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$password</var></dt>
+					<dd>The account password for authentication</dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					Exception<br><p>Thrown if <i>$password</i> is <i>null</i> or empty.</p>
+
+<p></p>
+
+<p><br /></p>
+				</div>
+
+				<h4>Example</h4>
+				<div class="list">
+						<p>The following sets the account password: </p>
+
+<pre><span class="php-var">$zs</span> = <span class="php-keyword1">new</span> ZenophSMSGH();
+<span class="php-var">$zs</span>-&gt;setPassword(<span class="php-quote">'account_password'</span>);</pre><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setMessage" id="_setMessage">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setMessage">#</a>
+		<code>setMessage( <span>string <var>$message</var></span> )</code>
+
+		<div class="description short">
+			<p>Sets the message that will be submitted to added mobile destinations.</p>
+
+<p><br /></p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Sets the message that will be submitted to added mobile destinations.</p>
+
+<p><br /></p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$message</var></dt>
+					<dd>The message to be sent to added mobile destinations.</dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					Exception<br><p>Thrown if <i>$message</i> is <i>null</i> or empty.</p>
+
+<p></p>
+
+<p><br /></p>
+				</div>
+
+				<h4>Example</h4>
+				<div class="list">
+						<p>The following non-personalised message will be submitted to destinations as it is composed:</p>
+
+<pre><span class="php-var">$message</span> = <span class="php-quote">'Bulk SMS to Ghana destinations from PHP SMS API library.'</span>;
+
+<span class="php-var">$zs</span> = <span class="php-keyword1">new</span> ZenophSMSGH();
+<span class="php-var">$zs</span>-&gt;setMessage(<span class="php-var">$message</span>);</pre>
+
+<p><br /></p>
+
+<p>In personalised messaging, variables must be defined in the message. The variables indicate
+the parts of the message where values will be different for each destination. The variables should be enclosed
+in single quotes otherwise the PHP interpreter will try to parse the variables defined
+in them which may generate an error.
+</p>
+
+<p><br /></p>
+
+<p>For example, the message can be defined as follows:</p>
+
+<pre><span class="php-var">$message</span> = <span class="php-quote">'Hello {$name}, your balance is ${$balance}'</span>;
+
+<span class="php-var">$zs</span> = <span class="php-keyword1">new</span> ZenophSMSGH();
+<span class="php-var">$zs</span>-&gt;setMessage(<span class="php-var">$message</span>);</pre>
+
+<p><br /></p>
+
+<p>
+The above example message shows that the message contains two variables. Each destination will have
+<i>name</i> and <i>balance</i> substituted in the message before being delivered to that destination.
+The values to be substituted will need to be provided when adding destinations.
+</p>
+
+<p><br /></p>
+
+<p>
+See the discussion on <code><a href="class-ZenophSMSGH.html#_addDestination">ZenophSMSGH::addDestination()</a></code> for how to specify values for each destination
+when sending personalised messages.
+</p>
+
+<p><br /></p><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setMessageType" id="_setMessageType">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setMessageType">#</a>
+		<code>setMessageType( <span>type <var>$msgtype</var></span> )</code>
+
+		<div class="description short">
+			<p>Sets the type of message to be sent.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Sets the type of message to be sent.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$msgtype</var></dt>
+					<dd><table class='summary'>
+<caption>Message Types and 1 SMS count limit</caption>
+<tr align='left'><th style='text-align: center;'>Message Type</th><th>Single</th><th>Concatenated</th></tr>
+<tr><td style='text-align: left;'><code><a href="class-ZenophSMSGH_MESSAGETYPE.html#TEXT">ZenophSMSGH_MESSAGETYPE::<b>TEXT</b></a></code></td><td>160</td><td>153</td></tr>
+<tr><td style='text-align: left;'><code><a href="class-ZenophSMSGH_MESSAGETYPE.html#FLASH_TEXT">ZenophSMSGH_MESSAGETYPE::<b>FLASH_TEXT</b></a></code></td><td>160</td><td>153</td></tr>
+<tr><td style='text-align: left;'><code><a href="class-ZenophSMSGH_MESSAGETYPE.html#UNICODE">ZenophSMSGH_MESSAGETYPE::<b>UNICODE</b></a></code></td><td>280</td><td>268</td></tr>
+<tr><td style='text-align: left;'><code><a href="class-ZenophSMSGH_MESSAGETYPE.html#FLASH_UNICODE">ZenophSMSGH_MESSAGETYPE::<b>FLASH_UNICODE</b></a></code></td><td>280</td><td>268</td></tr>
+</table>
+
+<p>
+For any message type, the message will be concatenated if its length exceeds the maximum number of
+characters for which it is treated as a single message. In that case, the corresponding limit for
+concatenated message will be used to count the number of SMS.
+</p></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setSenderId" id="_setSenderId">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setSenderId">#</a>
+		<code>setSenderId( <span>string <var>$senderid</var></span> )</code>
+
+		<div class="description short">
+			<p>Sets the message sender identifier.</p>
+
+<p><br /></p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Sets the message sender identifier.</p>
+
+<p><br /></p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$senderid</var></dt>
+					<dd>The message sender identifier.</dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					Exception<br><p>Thrown if any of the following is true:</p>
+
+<ul>
+ <li><i>$senderid</i> is <i>null</i> or empty.</li>
+ <li><i>$senderid</i> is numeric only sender identifier (phone number) and its length exceeds 15 characters.</li>
+ <li><i>$senderid</i> is alphanumeric sender identifier and its length exceeds 11 characters.</li>
+</ul>
+
+<p></p>
+
+<p><br /></p>
+
+<p>The message sender identifier is what recipients of the message will see as the sender of the
+message. The maximum number of characters for alphanumeric sender identifiers is 11 characters
+while the maximum number of characters for numeric sender identifiers is 15 characters.
+</p>
+				</div>
+
+				<h4>See</h4>
+				<div class="list">
+						<code><a href="class-ZenophSMSGH.html#NUMERIC_SENDER_ID_MAX_LEN">ZenophSMSGH::<b>NUMERIC_SENDER_ID_MAX_LEN</b></a></code><br>
+						<code><a href="class-ZenophSMSGH.html#ALPHANUMERIC_SENDER_ID_MAX_LEN">ZenophSMSGH::<b>ALPHANUMERIC_SENDER_ID_MAX_LEN</b></a></code><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isValidPhoneNumber" id="_isValidPhoneNumber">
+
+		<td class="attributes"><code>
+			 public static
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isValidPhoneNumber">#</a>
+		<code>isValidPhoneNumber( <span>string <var>$number</var></span> )</code>
+
+		<div class="description short">
+			<p>Checks to see if <i>$number</i> is a valid phone number or not.</p>
+
+<p><br /></p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Checks to see if <i>$number</i> is a valid phone number or not.</p>
+
+<p><br /></p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$number</var></dt>
+					<dd><p>The value to check whether it is a valid phone number or not.</p>
+
+<p><br /></p></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean<br><i>true</i> if <i>$number</i> is a valid phone number otherwise it returns <i>false</i>.
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addDestination" id="_addDestination">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addDestination">#</a>
+		<code>addDestination( <span>string <var>$phonenum</var></span>, <span>boolean <var>$throwex</var> = <span class="php-keyword1">true</span></span>, <span>array <var>$psndvalues</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>Adds a phone number the destinations list.</p>
+
+<p><br /></p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Adds a phone number the destinations list.</p>
+
+<p><br /></p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$phonenum</var></dt>
+					<dd><p>The phone number to be added to the destinations list. It can be in either local
+or international number format.</p>
+
+<p><br /></p></dd>
+					<dt><var>$throwex</var></dt>
+					<dd><p>Indicates whether or not Exception should be thrown if <i>$phonenum</i>
+is invalid or not allowed on user routes. Default is <i>true</i>.</p>
+
+<p><br /></p></dd>
+					<dt><var>$psndvalues</var></dt>
+					<dd><p>An array of personalised values for the destination in a personalised message.</p>
+
+<p><br /></p></dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					Exception<br><p>Thrown if <i>$phonenum</i> is invalid or, for personalised messaging, when
+<i>$psndvalues</i> is invalid.</p>
+
+<p></p>
+
+<p><br /></p>
+
+<p>
+<i>$phonenum</i> can be specified in either international or local number format:
+<pre><span class="php-comment">// initialise SMS object and set parameters.</span>
+<span class="php-var">$zs</span> = <span class="php-keyword1">new</span> ZenophSMSGH();
+<span class="php-var">$zs</span>-&gt;setUser(<span class="php-quote">'account_login'</span>);
+<span class="php-var">$zs</span>-&gt;setPassword(<span class="php-quote">'account_password'</span>);
+
+<span class="php-comment">// set message parameters.</span>
+
+<span class="php-comment">// add destinations.</span>
+<span class="php-var">$zs</span>-&gt;addDestination(<span class="php-quote">'264004000'</span>);     <span class="php-comment">// local number format, no leading zero (0)</span>
+<span class="php-var">$zs</span>-&gt;addDestination(<span class="php-quote">'0207700001'</span>);    <span class="php-comment">// local number format with leading zero (0).</span>
+<span class="php-var">$zs</span>-&gt;addDestination(<span class="php-quote">'233246000001'</span>);  <span class="php-comment">// international number format, no leading '+'.</span>
+<span class="php-var">$zs</span>-&gt;addDestination(<span class="php-quote">'+233208001100'</span>); <span class="php-comment">// international number format with leading '+'</span></pre>
+</p>
+
+<p><br /></p>
+
+<p>
+By default, Exception will be thrown if the <i>$phonenum</i> is invalid. To prevent the
+throwing of Exception when <i>$phonenum</i> is invalid, the second argument to the method must
+be set to <i>false</i>.
+<pre><span class="php-comment">// do not throw Exception if value specified as phone number is invalid.</span>
+<span class="php-var">$zs</span>-&gt;addDestination(<span class="php-quote">'0207700001'</span>, <span class="php-keyword1">false</span>);
+
+<span class="php-comment">// throw Exception if value specified as phone number is invalid.</span>
+<span class="php-var">$zs</span>-&gt;addDestination(<span class="php-quote">'026400400'</span>);
+<span class="php-var">$zs</span>-&gt;addDestination(<span class="php-quote">'0246000001'</span>, <span class="php-keyword1">true</span>);</pre>
+</p>
+
+<p><br /></p>
+
+<p>
+Setting <i>$throwex</i> to <i>false</i> may be handy when adding a lot of destinations in
+an iteration. In such cases, when a phone number is invalid, no Exception will be thrown and thus
+the iteration will not be terminated.
+<pre><span class="php-comment">// suppose we have the destinations in an array.</span>
+<span class="php-var">$destinations</span> = <span class="php-keyword1">array</span>(<span class="php-quote">'0264004000'</span>, <span class="php-quote">'0207700001'</span>, <span class="php-quote">'246000001'</span>);
+
+<span class="php-comment">// we can add the destinations in an iteration. To prevent the iteration</span>
+<span class="php-comment">// from being terminated when a phone number is invalid, we will need to</span>
+<span class="php-comment">// set $throwex to false.</span>
+<span class="php-keyword1">foreach</span> (<span class="php-var">$destinations</span> <span class="php-keyword1">as</span> <span class="php-var">$destination</span>)
+    <span class="php-var">$zs</span>-&gt;addDestination(<span class="php-var">$destination</span>, <span class="php-keyword1">false</span>);</pre>
+</p>
+
+<p><br /></p>
+
+<p>
+In personalised messaging, the values for each destination must also be passed  as an array to the
+method as the third argument. In such cases, the second argument must be explicitly set.
+</p>
+
+<p><br /></p>
+
+<p>
+Suppose we want to send personalised message to clients on their balance:
+<pre><span class="php-comment">// initialise SMS object and set parameters.</span>
+<span class="php-var">$zs</span> = <span class="php-keyword1">new</span> ZenophSMSGH();
+<span class="php-var">$zs</span>-&gt;setUser(<span class="php-quote">'account_login'</span>);
+<span class="php-var">$zs</span>-&gt;setPassword(<span class="php-quote">'account_password'</span>);
+
+<span class="php-comment">// set other parameters.</span>
+
+<span class="php-comment">// as an example, let's set the message as follows.</span>
+<span class="php-var">$zs</span>-&gt;setMessage(<span class="php-quote">'Hello {$name} your current balance is ${$balance}'</span>);</pre>
+</p>
+
+<p><br /></p>
+
+<p>
+As can be seen, the message contains two variables (<i>name</i>, <i>balance</i>). When adding destinations in
+personalised messaging, values must be supplied for each destination as an array with elements
+each for the variables in the same order as the variables are defined in the message.
+</p>
+
+<p><br /></p>
+
+<p>
+Let's setup client for demonstration.
+<pre><span class="php-comment">// client's data.</span>
+<span class="php-var">$clients</span>[] = <span class="php-keyword1">array</span>(<span class="php-quote">'name'</span>=&gt;<span class="php-quote">'Daniel'</span>, <span class="php-quote">'phone'</span>=&gt;<span class="php-quote">'0264004000'</span>, <span class="php-quote">'balance'</span>=&gt;<span class="php-num">545.56</span>);
+<span class="php-var">$clients</span>[] = <span class="php-keyword1">array</span>(<span class="php-quote">'name'</span>=&gt;<span class="php-quote">'Mavis'</span>, <span class="php-quote">'phone'</span>=&gt;<span class="php-quote">'0207700001'</span>, <span class="php-quote">'balance'</span>=&gt;<span class="php-num">345.90</span>);
+
+<span class="php-comment">// we can add destinations and specify values as follows.</span>
+<span class="php-keyword1">foreach</span> (<span class="php-var">$clients</span> <span class="php-keyword1">as</span> <span class="php-var">$client</span>)
+    <span class="php-var">$zs</span>-&gt;addDestination(<span class="php-var">$client</span>[<span class="php-quote">'phone'</span>], <span class="php-keyword1">false</span>, <span class="php-keyword1">array</span>(<span class="php-var">$client</span>[<span class="php-quote">'name'</span>], <span class="php-var">$client</span>[<span class="php-quote">'balance'</span>]));</pre>
+</p>
+
+<p><br /></p>
+
+<p>
+Observe how the values are provided in the method call as the third argument. There two
+variables defined in the message and hence two values are provided for each destination.
+Again, the order in which the values are set should match the order in which the variables
+are defined in the message for substitution.
+</p>
+
+<p><br /></p>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="sendMessage" id="_sendMessage">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_sendMessage">#</a>
+		<code>sendMessage( <span>boolean <var>$cleardests</var> = <span class="php-keyword1">true</span></span> )</code>
+
+		<div class="description short">
+			<p>Sends the message to the added destinations.</p>
+
+<p><br /></p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Sends the message to the added destinations.</p>
+
+<p><br /></p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$cleardests</var></dt>
+					<dd><p>Indicates whether the destinations list should be cleared
+after submitting the message. The default is <i>true</i>. Hence, the destinations will be
+cleared after submitting the message if it is not explicitly set to <i>false</i>.</p></dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-ZenophSMSGH_Exception.html">ZenophSMSGH_Exception</a></code><br>Thrown if server request fails.<br /><br>
+					Exception<br><p>Thrown if message submit validation fails.</p>
+
+<p></p>
+
+<p><br /></p>
+				</div>
+
+				<h4>Example</h4>
+				<div class="list">
+						<pre><span class="php-comment">// initialise SMS object and set parameters.</span>
+<span class="php-var">$zs</span> = <span class="php-keyword1">new</span> ZenophSMSGH();
+<span class="php-var">$zs</span>-&gt;setUser(<span class="php-quote">'account_login'</span>);
+<span class="php-var">$zs</span>-&gt;setPassword(<span class="php-quote">'account_password'</span>);
+
+<span class="php-comment">// message parameters.</span>
+<span class="php-var">$zs</span>-&gt;setMessageType(ZenophSMSGH_MESSAGETYPE::TEXT);
+<span class="php-var">$zs</span>-&gt;setSenderId(<span class="php-quote">'PHP API TEST'</span>);
+<span class="php-var">$zs</span>-&gt;setMessage(<span class="php-quote">'Hello there!'</span>);
+
+<span class="php-comment">// add destinations.</span>
+<span class="php-var">$zs</span>-&gt;addDestination(<span class="php-quote">'0207729851'</span>);   <span class="php-comment">// in local number format</span>
+<span class="php-var">$zs</span>-&gt;addDestination(<span class="php-quote">'233246314915'</span>); <span class="php-comment">// in international number format</span>
+
+<span class="php-comment">// send the message</span>
+<span class="php-var">$response</span> = <span class="php-var">$zs</span>-&gt;sendMessage();</pre>
+
+<p><br /></p>
+
+<p>
+If you do not want the destinations list to be cleared after submitting the message, you must set
+<i>$cleardests</i> to <i>false</i>. Then you can later clear the destinations list by calling
+<code><a href="class-ZenophSMSGH.html#_clearDestinations">ZenophSMSGH::clearDestinations()</a></code>
+</p>
+
+<p><br /></p>
+
+<pre><span class="php-comment">// send the message, but do not clear the destinations list.</span>
+<span class="php-var">$response</span> = <span class="php-var">$zs</span>-&gt;sendMessage(<span class="php-keyword1">false</span>);
+
+<span class="php-comment">// the destinations list may be cleared later.</span>
+<span class="php-var">$zs</span>-&gt;clearDestinations();</pre>
+
+<p><br /></p>
+
+<p>
+When <code><a href="class-ZenophSMSGH.html#_sendMessage">ZenophSMSGH::sendMessage()</a></code> is called, it returns an object of type <code><a href="class-ZenophSMSGH_MessageResponse.html">ZenophSMSGH_MessageResponse</a></code>. The
+returned object contains the value returned from the SMS server as well as indicator that tells whether
+the returned value is a token response or not.
+</p>
+
+<p><br /></p>
+
+<p>
+When a message is submitted and the number of destinations is less than or equal to <code><a href="class-ZenophSMSGH.html#BATCH_SUBMIT_MAX">ZenophSMSGH::<b>BATCH_SUBMIT_MAX</b></a></code>,
+the SMS server will submit the message and return the submit status of the destinations. In such case, the return object
+will contain an array of the destinations. Each destination will also be an array of three elements containing
+the phone number, submit status of the destination and an identifier which identifies the destination.
+</p>
+
+<p><br /></p>
+
+<p>
+For example, suppose we submit the message to two destinations:
+<pre><span class="php-comment">// initialise SMS object and set message parameters</span>
+
+<span class="php-comment">// now add destinations.</span>
+<span class="php-var">$zs</span>-&gt;addDestination(<span class="php-quote">'0246314915'</span>);
+<span class="php-var">$zs</span>-&gt;addDestination(<span class="php-quote">'0207729851'</span>);
+
+<span class="php-comment">// now suppose total destinations is less than <code><a href="class-ZenophSMSGH.html#BATCH_SUBMIT_MAX">ZenophSMSGH::<b>BATCH_SUBMIT_MAX</b></a></code></span>
+<span class="php-comment">// and the message is submitted.</span>
+<span class="php-var">$response</span> = <span class="php-var">$zs</span>-&gt;sendMessage();
+
+<span class="php-comment">// the response value will not be a token but we can also test for it.</span>
+<span class="php-keyword1">if</span> (<span class="php-var">$response</span>-&gt;isTokenResponse() == <span class="php-keyword1">false</span>){ <span class="php-comment">// we have submit status of destinations.</span>
+    <span class="php-var">$destinations</span> = <span class="php-var">$response</span>-&gt;getResponseValue();
+
+    <span class="php-comment">// in the destinations array are arrays of individual destinations</span>
+    <span class="php-comment">// with their status and identifier.</span>
+    <span class="php-keyword1">foreach</span> (<span class="php-var">$destinations</span> <span class="php-keyword1">as</span> <span class="php-var">$destination</span>){
+        <span class="php-keyword1">echo</span> <span class="php-quote">&quot;Destination: </span><span class="php-var">{$destination['number']}</span><span class="php-quote">, &quot;</span>.
+            <span class="php-quote">&quot;StatusCode: </span><span class="php-var">{$destination['statusCode']}</span><span class="php-quote">, &quot;</span>.
+            <span class="php-quote">&quot;Destination ID: </span><span class="php-var">{$destination['destinationId']}</span><span class="php-quote">&quot;</span>;
+    }
+}</pre>
+</p>
+
+<p><br /></p>
+
+<p>
+For scheduled messages and messages with destinations greater than <code><a href="class-ZenophSMSGH.html#BATCH_SUBMIT_MAX">ZenophSMSGH::<b>BATCH_SUBMIT_MAX</b></a></code>,
+the SMS server will immediately return a token before proceeding to submit the message.
+This is to prevent timeout when there will be long data processing. In such case,
+the response will be a single token that identifies the message submission. If there is the need,
+the returned token may be used to query the submit status of the destinations later.
+</p><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getBalance" id="_getBalance">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getBalance">#</a>
+		<code>getBalance( )</code>
+
+		<div class="description short">
+			<p>Gets the remaining account balance based on 1 SMS count.</p>
+
+<p><br /></p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Gets the remaining account balance based on 1 SMS count.</p>
+
+<p><br /></p>
+
+
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					Exception<br>Thrown if account login and or password is not set for authentication.<br /><br>
+					<code><a href="class-ZenophSMSGH_Exception.html">ZenophSMSGH_Exception</a></code><br><p>Thrown if request fails.</p>
+
+<p></p>
+
+<p><br /></p>
+
+<p>Account login and password must be set before calling this method otherwise
+Exception will be thrown.
+</p>
+
+<p><br /></p>
+				</div>
+
+				<h4>Example</h4>
+				<div class="list">
+						<pre><span class="php-comment">// initialise object and set required parameters.</span>
+<span class="php-var">$zs</span> = <span class="php-keyword1">new</span> ZenophSMSGH();
+<span class="php-var">$zs</span>-&gt;setUser(<span class="php-quote">'account_login'</span>);
+<span class="php-var">$zs</span>-&gt;setPassword(<span class="php-quote">'account_password'</span>);
+
+<span class="php-comment">// now we can request for the credits balance.</span>
+<span class="php-var">$balance</span> = <span class="php-var">$zs</span>-&gt;getBalance();</pre><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getSMSCount" id="_getSMSCount">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getSMSCount">#</a>
+		<code>getSMSCount( )</code>
+
+		<div class="description short">
+			<p>Gets the number of SMS that will be charged per each destination.</p>
+
+<p><br /></p>
+
+<p>
+The SMS count is determined based on the message type and the length of the
+message to be submitted. The total credits that will be charged is always the
+SMS count returned by this method multiplied by the total number of destinations added.
+</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Gets the number of SMS that will be charged per each destination.</p>
+
+<p><br /></p>
+
+<p>
+The SMS count is determined based on the message type and the length of the
+message to be submitted. The total credits that will be charged is always the
+SMS count returned by this method multiplied by the total number of destinations added.
+</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="clearDestinations" id="_clearDestinations">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_clearDestinations">#</a>
+		<code>clearDestinations( )</code>
+
+		<div class="description short">
+			<p>Clears the list of phone numbers added to the destinations list.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Clears the list of phone numbers added to the destinations list.</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="schedule" id="_schedule">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_schedule">#</a>
+		<code>schedule( <span>DateTime <var>$datetime</var></span> )</code>
+
+		<div class="description short">
+			<p>Sets date and time for scheduling message.</p>
+
+<p><br /></p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Sets date and time for scheduling message.</p>
+
+<p><br /></p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$datetime</var></dt>
+					<dd><p>A <i>DateTime</i> object that contains the date, time, and timezone for
+scheduling the message.<br /></p></dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					Exception<br><p>Thrown if <i>$datetime</i> is <i>null</i> or not an instance of <i>DateTime</i>.</p>
+
+<p></p>
+
+<p><br /></p>
+
+<p>
+The method sets the date and time for scheduling the message. <i>$datetime</i> must be a
+<i>DateTime</i> object with date, time, and the timezone offset from UTC set.
+</p>
+
+<p><br /></p>
+
+<p>
+The time zone for the specified date and time will also affect the time the message will be submitted.
+</p>
+
+<p><br /></p>
+				</div>
+
+				<h4>Example</h4>
+				<div class="list">
+						<pre><span class="php-comment">// initialise sms object and set parameters.</span>
+<span class="php-var">$zs</span> = <span class="php-keyword1">new</span> ZenophSMSGH();
+
+<span class="php-comment">// set other parameters.</span>
+
+<span class="php-comment">// to schedule the message for submission on April 2, 2016 at 3:30 PM</span>
+<span class="php-var">$datetime</span> = <span class="php-keyword1">new</span> DateTime();
+<span class="php-var">$datetime</span>-&gt;setDate(<span class="php-num">2016</span>, <span class="php-num">4</span>, <span class="php-num">2</span>);
+<span class="php-var">$datetime</span>-&gt;setTime(<span class="php-num">15</span>, <span class="php-num">30</span>, <span class="php-num">0</span>);
+<span class="php-var">$datetime</span>-&gt;setTimezone(<span class="php-keyword1">new</span> DateTimeZone(<span class="php-quote">'Africa/Accra'</span>));
+
+<span class="php-comment">// the method can be called to set the schedule date, time and timezone.</span>
+<span class="php-comment">// It does not submit the message to the server.</span>
+<span class="php-var">$zs</span>-&gt;schedule(<span class="php-var">$datetime</span>);
+
+<span class="php-comment">// when ready, sendMessage() can be called.</span>
+<span class="php-var">$response</span> = <span class="php-var">$zs</span>-&gt;sendMessage();</pre><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+	<table class="summary constants" id="constants">
+	<caption>Constants summary</caption>
+	<tr data-order="BATCH_SUBMIT_MAX" id="BATCH_SUBMIT_MAX">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name">
+			<code>
+<b>BATCH_SUBMIT_MAX</b>			</code>
+
+			<div class="description short">
+				<p>The maximum number of destinations for which the submit status of the destinations will be
+immediately returned.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>The maximum number of destinations for which the submit status of the destinations will be
+immediately returned.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#BATCH_SUBMIT_MAX" class="anchor">#</a>
+				<code><span class="php-num">400</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="NUMERIC_SENDER_ID_MAX_LEN" id="NUMERIC_SENDER_ID_MAX_LEN">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name">
+			<code>
+<b>NUMERIC_SENDER_ID_MAX_LEN</b>			</code>
+
+			<div class="description short">
+				<p>The maximum number of characters for message sender identifier when it
+contains only numeric characters, eg., phone number.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>The maximum number of characters for message sender identifier when it
+contains only numeric characters, eg., phone number.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#NUMERIC_SENDER_ID_MAX_LEN" class="anchor">#</a>
+				<code><span class="php-num">15</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="ALPHANUMERIC_SENDER_ID_MAX_LEN" id="ALPHANUMERIC_SENDER_ID_MAX_LEN">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name">
+			<code>
+<b>ALPHANUMERIC_SENDER_ID_MAX_LEN</b>			</code>
+
+			<div class="description short">
+				<p>The maximum number of characters for message sender identifier when it
+contains alphanumeric characters.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>The maximum number of characters for message sender identifier when it
+contains alphanumeric characters.</p>
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#ALPHANUMERIC_SENDER_ID_MAX_LEN" class="anchor">#</a>
+				<code><span class="php-num">11</span></code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		PHP SMS API for Bulk SMS (Ghana) - SMSONLINEGH API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>
