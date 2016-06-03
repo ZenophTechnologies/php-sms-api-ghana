@@ -62,6 +62,8 @@ foreach ($contacts as $contact)
     
 ```
 
+The second argument to addDestination() specifies whether Exception should be thrown if a phone number is invalid and or when any of the values is invalid. The default is true but it must be explicitly set when adding destinations with personalised values. In an iteration, this can be set to false to prevent the iteration from being terminated. In our case, we have set it to true and the iteration will terminate if data validation fails.
+
 As seen from the above code, the values to be substituted in the message for each destination are passed as an array and as the third argument to addDestinations() function. Notice that the values are ordered such that they match the order in which the variables are defined in the message for substitution. When done, the message can be submitted:
 
 ```php
@@ -85,10 +87,14 @@ $zs->schedule($datetime);
 $zs->sendMessage();
 ```
 
+
+
 ## Conclusion
 As the ultimate bulk SMS provider in Ghana, <a alt='Cheap bulk SMS provider in Ghana' href='http://smsonlinegh.com/'>SMSONLINEGH</a> releases a simple PHP SMS API that can be used to send bulk SMS to mobile destinations in Ghana. The API can be used to send both personalised and non-personalised messages as well as schedule messages. 
 
-Developers need not worry about sending bulk SMS to Ghana from their PHP applications anymore. Use our PHP SMS API for Ghana by importing the library in you PHP application. Set you message, add destinations, and then send.
+Developers need not worry about sending bulk SMS to Ghana from their PHP applications anymore. Use our PHP SMS API for Ghana by importing the library in your PHP applications. Set your message, add destinations, and then send.
+
+To get started, download the API and extract it. You will find the API library as well as documentation to get you easily going.
 
 ## Other SMS APIs and Tools
 - <a alt='Java SMS API for Ghana Destinations' target='_blank' href='http://smsonlinegh.com/resources.php?page=java-api'>Java SMS API for Ghana Destinations</a>
