@@ -90,7 +90,7 @@ $zs->sendMessage();
 
 
 ## Conclusion
-As the ultimate bulk SMS provider in Ghana, <a alt='Cheap bulk SMS provider in Ghana' href='http://smsonlinegh.com/'>SMSONLINEGH</a> releases a simple PHP SMS API that can be used to send bulk SMS to mobile destinations in Ghana. The API can be used to send both personalised and non-personalised messages as well as schedule messages. 
+As the ultimate bulk SMS provider in Ghana, Zenoph Technologies Ltd releases a simple PHP SMS API that can be used to send bulk SMS to mobile destinations in Ghana through <a alt='Cheap bulk SMS provider in Ghana' href='http://smsonlinegh.com/'>SMSONLINEGH</a>. The API can be used to send both personalised and non-personalised messages as well as schedule messages. 
 
 Developers need not worry about sending bulk SMS to Ghana from their PHP applications anymore. Use our PHP SMS API for Ghana by importing the library in your PHP applications. Set your message, add destinations, and then send.
 
