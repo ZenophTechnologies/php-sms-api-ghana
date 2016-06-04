@@ -97,6 +97,6 @@ Developers need not worry about sending bulk SMS to Ghana from their PHP applica
 To get started, download the API and extract it. You will find the API library as well as documentation to get you easily going.
 
 ## Other SMS APIs and Tools
-- <a alt='Java SMS API for Ghana Destinations' target='_blank' href='http://smsonlinegh.com/resources.php?page=java-api'>Java SMS API for Ghana Destinations</a>
-- <a alt='C#, VB.NET, C++/CLI SMS API for Ghana Destinations' target='_blank' href='http://smsonlinegh.com/resources.php?page=dotnet-api'>C#, VB.NET, C++/CLI Bulk SMS API for Ghana Destinations</a>
+- <a alt='Java SMS API for Ghana Destinations' target='_blank' href='http://smsonlinegh.com/api/java-sms-api'>Java SMS API for Ghana Destinations</a>
+- <a alt='C#, VB.NET, C++/CLI SMS API for Ghana Destinations' target='_blank' href='http://smsonlinegh.com/api/.net-sms-api'>C#, VB.NET, C++/CLI Bulk SMS API for Ghana Destinations</a>
 - <a alt='Send Bulk SMS in Ghana from Excel spreadsheet' target='_blank' href='http://smsonlinegh.com/resources.php?page=excel-sms-plugin'>Excel Bulk SMS plugin for Ghana Destinations</a>
