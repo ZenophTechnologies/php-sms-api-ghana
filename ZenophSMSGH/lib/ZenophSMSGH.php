@@ -544,13 +544,12 @@
             // see if we are to clear the destinations.
             if ($cleardests)
                 $this->clearDestinations();
-        
-            $response = explode(self::$DESTINATION_SEP, $response[1]);
-            
-            if (count($response) == 1) // a token response.
-                return new ZenophSMSGH_MessageResponse(true, $response); 
+
+           // check to see if we have a token response or not.
+            if (substr_count($response[1], '|') == 0)
+                return new ZenophSMSGH_MessageResponse(true, $response[1]);
             else {
-                // we have an array.
+                $response = explode(self::$DESTINATION_SEP, $response[1]);
                 $submitresp = array();
                 
                 foreach ($response as $destinfo){
