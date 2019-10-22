@@ -392,7 +392,7 @@
             }
             
             // if personalised values are provided, the message must already be set.
-            if ((isset($psndvalues) || count($psndvalues)) && !isset($this->message) || empty($this->message))
+            if ((!is_null($psndvalues) && is_array($psndvalues) && count($psndvalues) > 0) && is_null($this->message) || empty($this->message))
                 self::throwException('No message has been set for adding personalised destination.');
             
             // get number of variables in the message and ensure it corresponds with
